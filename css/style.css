@@ -312,6 +312,33 @@
     background: var(--bs-primary);
 }
 
+/* Tombol Ajukan Bimbingan */
+.btn-apply {
+    display: inline-block;
+    background-color: var(--bs-primary);
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}
+
+/* Hover efek */
+.team-item:hover .btn-apply {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Optional: efek glow kecil pas hover */
+.btn-apply:hover {
+    background-color: #0b5c5a;
+    box-shadow: 0 0 10px rgba(13, 107, 104, 0.5);
+}
+
 
 /*** Testimonial ***/
 .testimonial-img {
@@ -490,4 +517,25 @@
 .scholarship-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Student Guide Section */
+.text-primary {
+  color: #0d6b68 !important;
+}
+
+.btn-outline-primary {
+  color: #0d6b68;
+  border-color: #0d6b68;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0d6b68;
+  color: #fff;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #0d6b68;
+  box-shadow: 0 0 0 0.15rem rgba(13, 107, 104, 0.25);
 }

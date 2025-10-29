@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>iSTUDIO - Interior Design Website Template Free</title>
+    <title>Student Guide</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -73,14 +73,14 @@
         <div class="container py-5">
             <div class="row g-3 align-items-center">
                 <div class="col-lg-6 text-center text-lg-start">
-                    <h1 class="display-1 mb-0 animated slideInLeft">Projects</h1>
+                    <h1 class="display-1 mb-0 animated slideInLeft">Student Guide</h1>
                 </div>
                 <div class="col-lg-6 animated slideInRight">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center justify-content-lg-end mb-0">
                             <li class="breadcrumb-item"><a class="text-primary" href="#!">Home</a></li>
                             <li class="breadcrumb-item"><a class="text-primary" href="#!">Pages</a></li>
-                            <li class="breadcrumb-item text-secondary active" aria-current="page">Projects</li>
+                            <li class="breadcrumb-item text-secondary active" aria-current="page">Panduan Mahasiswa</li>
                         </ol>
                     </nav>
                 </div>
@@ -89,179 +89,94 @@
     </div>
     <!-- Hero End -->
 
+    <!--  STUDENT GUIDE SECTION START  -->
+    <section class="scholarship-section py-5">
+    <div class="container">
 
-    <!-- Project Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row g-0">
-                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="d-flex flex-column justify-content-center bg-primary h-100 p-5">
-                        <h1 class="text-white mb-5">Our Latest <span
-                                class="text-uppercase text-primary bg-light px-2">Projects</span></h1>
-                        <h4 class="text-white mb-0"><span class="display-1">6</span> of our latest projects</h4>
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="row g-0">
-                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.2s">
-                            <div class="project-item position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/project-1.jpg" alt="">
-                                <a class="project-overlay text-decoration-none" href="#!">
-                                    <h4 class="text-white">Kitchen</h4>
-                                    <small class="text-white">72 Projects</small>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-                            <div class="project-item position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/project-2.jpg" alt="">
-                                <a class="project-overlay text-decoration-none" href="#!">
-                                    <h4 class="text-white">Bathroom</h4>
-                                    <small class="text-white">67 Projects</small>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.4s">
-                            <div class="project-item position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/project-3.jpg" alt="">
-                                <a class="project-overlay text-decoration-none" href="#!">
-                                    <h4 class="text-white">Bedroom</h4>
-                                    <small class="text-white">53 Projects</small>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                            <div class="project-item position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/project-4.jpg" alt="">
-                                <a class="project-overlay text-decoration-none" href="#!">
-                                    <h4 class="text-white">Living Room</h4>
-                                    <small class="text-white">33 Projects</small>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.6s">
-                            <div class="project-item position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/project-5.jpg" alt="">
-                                <a class="project-overlay text-decoration-none" href="#!">
-                                    <h4 class="text-white">Furniture</h4>
-                                    <small class="text-white">87 Projects</small>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.7s">
-                            <div class="project-item position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/project-6.jpg" alt="">
-                                <a class="project-overlay text-decoration-none" href="#!">
-                                    <h4 class="text-white">Rennovation</h4>
-                                    <small class="text-white">69 Projects</small>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!--  SEARCH & FILTER -->
+        <div class="d-flex flex-wrap align-items-center mb-4 gap-2">
+        <input type="text" class="form-control flex-grow-1" placeholder="Search scholarships by name, country, or field...">
+        <button class="btn btn-primary">Search</button>
+        <button class="btn btn-outline-primary" id="filterToggle">☰ Filters</button>
+        </div>
+
+        <!--  SIDEBAR FILTER -->
+        <div id="filterSidebar" class="filter-sidebar shadow">
+        <h5 class="text-primary mb-3">Filter Scholarships</h5>
+        <div class="mb-3">
+            <h6>Country</h6>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="idn"><label class="form-check-label" for="idn">Indonesia</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="usa"><label class="form-check-label" for="usa">USA</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="jpn"><label class="form-check-label" for="jpn">Japan</label></div>
+        </div>
+        <div class="mb-3">
+            <h6>Degree Level</h6>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="undergrad"><label class="form-check-label" for="undergrad">Undergraduate</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="master"><label class="form-check-label" for="master">Master</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="phd"><label class="form-check-label" for="phd">PhD</label></div>
+        </div>
+        <button class="btn btn-primary w-100 mb-2">Apply Filters</button>
+        <button class="btn btn-outline-primary w-100" id="closeFilter">Close</button>
+        </div>
+
+        <!--  STUDENT GUIDE CARDS -->
+        <div class="row g-4" id="scholarshipList">
+        <div class="col-md-4">
+            <div class="card scholarship-card border-0 shadow h-100">
+            <div class="card-body">
+                <h5 class="card-title text-primary">Panduan KRS Online</h5>
+                    <p class="card-text">Langkah-langkah mengisi KRS melalui portal akademik universitas dengan benar dan efisien.</p>
+                    <a href="#!" class="btn btn-outline-primary btn-sm">Read Guide</a>
+                <span class="position-absolute" style="bottom:10px; right:15px; font-weight:bold; color:#0d6b68;">
+                    <i class="bi bi-book"></i> Academic
+            </span>
+            </div>
             </div>
         </div>
-    </div>
-    <!-- Project End -->
 
-
-    <!-- Testimonial Start -->
-    <div class="container-xxl pb-5">
-        <div class="container pb-5">
-            <div class="row justify-content-center">
-                <div class="col-md-12 col-lg-9">
-                    <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay="0.2s">
-                        <div class="testimonial-item">
-                            <div class="row g-5 align-items-center">
-                                <div class="col-md-6">
-                                    <div class="testimonial-img">
-                                        <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="testimonial-text pb-5 pb-md-0">
-                                        <h3>Sustainable Material</h3>
-                                        <p>Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed
-                                            stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
-                                            dolore erat
-                                            amet</p>
-                                        <h5 class="mb-0">Boris Johnson</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item">
-                            <div class="row g-5 align-items-center">
-                                <div class="col-md-6">
-                                    <div class="testimonial-img">
-                                        <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="testimonial-text pb-5 pb-md-0">
-                                        <h3>Customer Satisfaction</h3>
-                                        <p>Clita erat ipsum et lorem et sit, sed
-                                            stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
-                                            dolore erat
-                                            amet</p>
-                                        <h5 class="mb-0">Alexander Bell</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item">
-                            <div class="row g-5 align-items-center">
-                                <div class="col-md-6">
-                                    <div class="testimonial-img">
-                                        <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="testimonial-text pb-5 pb-md-0">
-                                        <h3>Budget Friendly</h3>
-                                        <p>Diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed
-                                            stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
-                                            dolore erat
-                                            amet</p>
-                                        <h5 class="mb-0">Bradley Gordon</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="col-md-4">
+            <div class="card scholarship-card border-0 shadow h-100">
+            <div class="card-body">
+                <h5 class="card-title text-primary">Panduan KRS Online</h5>
+                    <p class="card-text">Langkah-langkah mengisi KRS melalui portal akademik universitas dengan benar dan efisien.</p>
+                    <a href="#!" class="btn btn-outline-primary btn-sm">Read Guide</a>
+                <span class="position-absolute" style="bottom:10px; right:15px; font-weight:bold; color:#0d6b68;">
+                    <i class="bi bi-book"></i> Academic
+            </span>
+            </div>
             </div>
         </div>
-    </div>
-    <!-- Testimonial End -->
 
-
-    <!-- Newsletter Start -->
-    <div class="container-fluid bg-primary newsletter p-0">
-        <div class="container p-0">
-            <div class="row g-0 align-items-center">
-                <div class="col-md-5 ps-lg-0 text-start wow fadeIn" data-wow-delay="0.2s">
-                    <img class="img-fluid w-100" src="img/newsletter.jpg" alt="">
-                </div>
-                <div class="col-md-7 py-5 newsletter-text wow fadeIn" data-wow-delay="0.5s">
-                    <div class="p-5">
-                        <h1 class="mb-5">Subscribe the <span
-                                class="text-uppercase text-primary bg-white px-2">Newsletter</span></h1>
-                        <div class="position-relative w-100 mb-2">
-                            <input class="form-control border-0 w-100 ps-4 pe-5" type="text"
-                                placeholder="Enter Your Email" style="height: 60px;">
-                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-2 me-2"><i
-                                    class="fa fa-paper-plane text-primary fs-4"></i></button>
-                        </div>
-                        <p class="mb-0">Diam sed sed dolor stet amet eirmod</p>
-                    </div>
-                </div>
+        <div class="col-md-4">
+            <div class="card scholarship-card border-0 shadow h-100">
+            <div class="card-body">
+                <h5 class="card-title text-primary">Panduan KRS Online</h5>
+                    <p class="card-text">Langkah-langkah mengisi KRS melalui portal akademik universitas dengan benar dan efisien.</p>
+                    <a href="#!" class="btn btn-outline-primary btn-sm">Read Guide</a>
+                <span class="position-absolute" style="bottom:10px; right:15px; font-weight:bold; color:#0d6b68;">
+                    <i class="bi bi-book"></i> Academic
+            </span>
+            </div>
             </div>
         </div>
+        </div>
+
+        <!--  PAGINATION -->
+        <nav class="mt-5">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+        </nav>
+
     </div>
-    <!-- Newsletter End -->
+    </section>
+    <!--  STUDENT GUIDE SECTION END  -->
 
-
+    
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 footer pt-5">
         <div class="container py-5">
@@ -351,6 +266,18 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+        const filterSidebar = document.getElementById('filterSidebar');
+            document.getElementById('filterToggle').addEventListener('click', () => {
+                filterSidebar.classList.add('active');
+    });
+
+        document.getElementById('closeFilter').addEventListener('click', () => {
+            filterSidebar.classList.remove('active');
+    });
+    </script>
+
 </body>
 
 </html>
